@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="auto_reset_area"/>
+    <attr format="boolean" name="auto_reset_enable"/>
+    <attr format="reference" name="edit_view"/>
+    <attr format="boolean" name="lux_active"/>
+    <attr format="reference" name="lux_commonButtonStyle"/>
+    <attr format="enum" name="lux_gradientOrientation">// 渐变色方向
+        <enum name="left_right" value="0"/>
+        <enum name="leftBottom_rightTop" value="1"/>
+        <enum name="leftTop_rightBottom" value="2"/>
+        <enum name="top_bottom" value="3"/>
+    </attr>
+    <attr format="string" name="lux_hintText"/>
+    <attr format="color" name="lux_hintTextColor"/>
+    <attr format="enum" name="lux_indicatorShape">
+        <enum name="round" value="0"/>
+        <enum name="parallelogram" value="1"/>
+    </attr>
+    <attr format="dimension" name="lux_indicatorSpace"/>
+    <attr format="reference" name="lux_mainButtonStyle"/>
+    <attr format="color" name="lux_normalColor"/>
+    <attr format="dimension" name="lux_normalSize"/>
+    <attr format="dimension" name="lux_radius"/>
+    <attr format="dimension" name="lux_selectedSize"/>
+    <attr format="color" name="lux_strokeColor"/>
+    <attr format="dimension" name="lux_strokeWidth"/>
+    <attr format="reference" name="lux_subButtonStyle"/>
+    <attr format="color" name="lux_switchColor"/>
+    <attr format="string" name="lux_text"/>
+    <attr format="color" name="lux_textColor"/>
+    <attr format="color" name="lux_textColorSelected"/>
+    <attr format="dimension" name="lux_textSize"/>
+    <attr format="color" name="lux_themeColor"/>
+    <color name="lux_c1">#000000</color>
+    <color name="lux_c10">#F6F7F9</color>
+    <color name="lux_c100">#EAE6FF</color>
+    <color name="lux_c100_10">#1AEAE6FF</color>
+    <color name="lux_c100_20">#33EAE6FF</color>
+    <color name="lux_c100_30">#4DEAE6FF</color>
+    <color name="lux_c100_40">#66EAE6FF</color>
+    <color name="lux_c100_50">#80EAE6FF</color>
+    <color name="lux_c100_60">#99EAE6FF</color>
+    <color name="lux_c100_70">#B3EAE6FF</color>
+    <color name="lux_c100_80">#CCEAE6FF</color>
+    <color name="lux_c100_90">#E6EAE6FF</color>
+    <color name="lux_c101">#9F80FF</color>
+    <color name="lux_c102">#FFD476</color>
+    <color name="lux_c103">#FF78ED</color>
+    <color name="lux_c104">#78FFE0</color>
+    <color name="lux_c105">#508BFF</color>
+    <color name="lux_c106">#181626</color>
+    <color name="lux_c107">#FF5151</color>
+    <color name="lux_c10_50">#80F6F7F9</color>
+    <color name="lux_c11">#F8F8F8</color>
+    <color name="lux_c12">#FFFFFF</color>
+    <color name="lux_c12_10">#1AFFFFFF</color>
+    <color name="lux_c12_20">#33FFFFFF</color>
+    <color name="lux_c12_30">#4DFFFFFF</color>
+    <color name="lux_c12_40">#66FFFFFF</color>
+    <color name="lux_c12_50">#80FFFFFF</color>
+    <color name="lux_c12_60">#99FFFFFF</color>
+    <color name="lux_c12_70">#B3FFFFFF</color>
+    <color name="lux_c12_80">#CCFFFFFF</color>
+    <color name="lux_c12_90">#E6FFFFFF</color>
+    <color name="lux_c12_95">#F2FFFFFF</color>
+    <color name="lux_c13">#F2F2F2</color>
+    <color name="lux_c14">#EEF0F5</color>
+    <color name="lux_c15">#ACB4BF</color>
+    <color name="lux_c16">#CACEDB</color>
+    <color name="lux_c1_0">#00000000</color>
+    <color name="lux_c1_10">#1A000000</color>
+    <color name="lux_c1_20">#33000000</color>
+    <color name="lux_c1_3">#08000000</color>
+    <color name="lux_c1_30">#4D000000</color>
+    <color name="lux_c1_40">#66000000</color>
+    <color name="lux_c1_50">#80000000</color>
+    <color name="lux_c1_6">#0F000000</color>
+    <color name="lux_c1_60">#99000000</color>
+    <color name="lux_c1_70">#B3000000</color>
+    <color name="lux_c1_75">#BF000000</color>
+    <color name="lux_c1_80">#CC000000</color>
+    <color name="lux_c1_90">#E6000000</color>
+    <color name="lux_c2">#111111</color>
+    <color name="lux_c20">#1A8CFF</color>
+    <color name="lux_c20_10">#1A1A8CFF</color>
+    <color name="lux_c20_30">#4D1A8CFF</color>
+    <color name="lux_c20_5">#0D1A8CFF</color>
+    <color name="lux_c20_50">#801A8CFF</color>
+    <color name="lux_c20_a">#E8F3FF</color>
+    <color name="lux_c20_b">#8CC5FF</color>
+    <color name="lux_c20_c">#DDEEFF</color>
+    <color name="lux_c21">#1DA8FF</color>
+    <color name="lux_c21_a">#1A97E6</color>
+    <color name="lux_c21_b">#8ED3FF</color>
+    <color name="lux_c22">#208CFF</color>
+    <color name="lux_c22_a">#1C7EE6</color>
+    <color name="lux_c22_b">#8FC5FF</color>
+    <color name="lux_c23">#FE3A3A</color>
+    <color name="lux_c23_a">#FFEEEE</color>
+    <color name="lux_c23_a_80">#CCFFEEEE</color>
+    <color name="lux_c23_b">#FE6161</color>
+    <color name="lux_c24">#01DD66</color>
+    <color name="lux_c25">#FF9808</color>
+    <color name="lux_c26">#FFDF07</color>
+    <color name="lux_c27">#FFBE00</color>
+    <color name="lux_c28">#69FFF5</color>
+    <color name="lux_c29">#69BEFF</color>
+    <color name="lux_c3">#222222</color>
+    <color name="lux_c30">#383534</color>
+    <color name="lux_c31">#1C1B1A</color>
+    <color name="lux_c32">#FFD49F</color>
+    <color name="lux_c32_30">#4DFFD49F</color>
+    <color name="lux_c33">#FFE9CE</color>
+    <color name="lux_c34">#FAC189</color>
+    <color name="lux_c35">#4E2E19</color>
+    <color name="lux_c36">#E99D3F</color>
+    <color name="lux_c37">#674128</color>
+    <color name="lux_c38">#FE8B6C</color>
+    <color name="lux_c39">#FF6C84</color>
+    <color name="lux_c4">#666666</color>
+    <color name="lux_c40">#5283FF</color>
+    <color name="lux_c41">#FF2D55</color>
+    <color name="lux_c42">#FF7340</color>
+    <color name="lux_c42_10">#1AFF7340</color>
+    <color name="lux_c43">#4B90FF</color>
+    <color name="lux_c44">#3FCCEF</color>
+    <color name="lux_c45">#3FCCEF</color>
+    <color name="lux_c46">#FF9B52</color>
+    <color name="lux_c47">#9E4EFF</color>
+    <color name="lux_c48">#DF7CFF</color>
+    <color name="lux_c49">#EEF3FF</color>
+    <color name="lux_c4_30">#4D666666</color>
+    <color name="lux_c4_70">#B3666666</color>
+    <color name="lux_c5">#999999</color>
+    <color name="lux_c50">#50B4FF</color>
+    <color name="lux_c50_10">#1A50B4FF</color>
+    <color name="lux_c50_8">#1450B4FF</color>
+    <color name="lux_c51">#9B7BFF</color>
+    <color name="lux_c51_10">#1A9B7BFF</color>
+    <color name="lux_c51_8">#149B7BFF</color>
+    <color name="lux_c52">#FF4FDE</color>
+    <color name="lux_c52_10">#1AFF4FDE</color>
+    <color name="lux_c52_8">#14FF4FDE</color>
+    <color name="lux_c53">#FF8922</color>
+    <color name="lux_c53_10">#1AFF8922</color>
+    <color name="lux_c53_8">#14FF8922</color>
+    <color name="lux_c54">#3EC4FF</color>
+    <color name="lux_c54_10">#1A3EC4FF</color>
+    <color name="lux_c55">#FE3D9C</color>
+    <color name="lux_c56">#E8F5FF</color>
+    <color name="lux_c57">#FF6082</color>
+    <color name="lux_c58">#718CFF</color>
+    <color name="lux_c59">#09E5FF</color>
+    <color name="lux_c5_30">#4D999999</color>
+    <color name="lux_c6">#C9C9C9</color>
+    <color name="lux_c60">#F849DF</color>
+    <color name="lux_c64">#1D83FF</color>
+    <color name="lux_c64_a">#1A76E6</color>
+    <color name="lux_c64_b">#8EC1FF</color>
+    <color name="lux_c65">#8FF4FF</color>
+    <color name="lux_c66">#A8E5FF</color>
+    <color name="lux_c67">#39B7FF</color>
+    <color name="lux_c68">#FEE770</color>
+    <color name="lux_c69">#D17C15</color>
+    <color name="lux_c7">#D8D8D8</color>
+    <color name="lux_c70">#F710FF</color>
+    <color name="lux_c71">#FF526C</color>
+    <color name="lux_c72">#3394FF</color>
+    <color name="lux_c72_a">#2B7DD9</color>
+    <color name="lux_c73">#B46DEF</color>
+    <color name="lux_c73_a">#985CCA</color>
+    <color name="lux_c74">#FC41AD</color>
+    <color name="lux_c75">#DD62FF</color>
+    <color name="lux_c76">#FEECF6</color>
+    <color name="lux_c77">#FBEFFF</color>
+    <color name="lux_c78">#FF6E94</color>
+    <color name="lux_c79">#FFEDF2</color>
+    <color name="lux_c8">#EEEEEE</color>
+    <color name="lux_c80">#FF780C</color>
+    <color name="lux_c81">#FFB323</color>
+    <color name="lux_c82">#FFF7ED</color>
+    <color name="lux_c83">#8854FF</color>
+    <color name="lux_c83_a">#7347D9</color>
+    <color name="lux_c83_b">#C3A9FF</color>
+    <color name="lux_c83_c">#9465FF</color>
+    <color name="lux_c84">#F4EFFF</color>
+    <color name="lux_c85">#F6FAFF</color>
+    <color name="lux_c85_95">#F2F6FAFF</color>
+    <color name="lux_c9">#F2F3F5</color>
+    <color name="lux_cell_line_color">@color/lux_c8</color>
+    <color name="lux_switchColor">@color/lux_themeColor</color>
+    <color name="lux_themeColor">@color/lux_c20</color>
+    <dimen name="lux_action_sheet_padding">16dp</dimen>
+    <dimen name="lux_button_max_radius">50dp</dimen>
+    <dimen name="lux_cell_horizontal_space">16dp</dimen>
+    <dimen name="lux_cell_line_height">0.5dp</dimen>
+    <dimen name="lux_divider_height">1px</dimen>
+    <dimen name="lux_f10">10dp</dimen>
+    <dimen name="lux_f11">11dp</dimen>
+    <dimen name="lux_f12">12dp</dimen>
+    <dimen name="lux_f13">13dp</dimen>
+    <dimen name="lux_f14">14dp</dimen>
+    <dimen name="lux_f15">15dp</dimen>
+    <dimen name="lux_f16">16dp</dimen>
+    <dimen name="lux_f18">18dp</dimen>
+    <dimen name="lux_f20">20dp</dimen>
+    <dimen name="lux_f22">22dp</dimen>
+    <dimen name="lux_f24">24dp</dimen>
+    <dimen name="lux_f28">28dp</dimen>
+    <dimen name="lux_f30">30dp</dimen>
+    <dimen name="lux_f8">8dp</dimen>
+    <dimen name="lux_f9">9dp</dimen>
+    <dimen name="lux_picker_view_min_height">150dp</dimen>
+    <dimen name="lux_picker_view_text_size">@dimen/lux_f16</dimen>
+    <dimen name="lux_picker_view_top_bar_btn_text_size">@dimen/lux_f16</dimen>
+    <dimen name="lux_picker_view_top_bar_height">52dp</dimen>
+    <dimen name="lux_picker_view_top_bar_padding">16dp</dimen>
+    <dimen name="lux_picker_view_top_bar_title_text_size">@dimen/lux_f16</dimen>
+    <dimen name="lux_tabLayout_max_padding">48dp</dimen>
+    <dimen name="lux_tabLayout_normal_padding">16dp</dimen>
+    <dimen name="lux_toolbar_iconfont_padding">12dp</dimen>
+    <dimen name="lux_toolbar_iconfont_size">@dimen/lux_f30</dimen>
+    <dimen name="lux_toolbar_text_padding">16dp</dimen>
+    <dimen name="lux_toolbar_text_size">@dimen/lux_f16</dimen>
+    <item name="lux_immersion_navigation_bar_view" type="id"/>
+    <item name="lux_window_inset_keyboard_area_consumer" type="id"/>
+    <string name="lux_btn_confirm">Confirm</string>
+    <string name="lux_cancel">Cancel</string>
+    <string name="lux_dialog_btn_confirm">Confirm</string>
+    <string name="lux_picker_view_day"> day</string>
+    <string name="lux_picker_view_hours">h</string>
+    <string name="lux_picker_view_minutes">m</string>
+    <string name="lux_picker_view_month">month</string>
+    <string name="lux_picker_view_seconds">s</string>
+    <string name="lux_picker_view_year">Year</string>
+    <string name="lux_please_input_content">Please enter your content...</string>
+    <string name="lux_search_bar_transition" translatable="false">lux_search_bar_transition</string>
+    <string name="lux_search_text">Search</string>
+    <string name="lux_set_failed">Settings failed</string>
+    <string name="lux_set_success">Appointed successfully</string>
+    <style name="LuxLoadingDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/lux_toast_with_pic</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Toast</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="LuxPullToRefreshViewStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+    <style name="LuxTextFiledStyleDefault">
+        <item name="lux_hintText">@string/lux_please_input_content</item>
+        <item name="lux_radius">8dp</item>
+    </style>
+    <style name="Lux_DialogBottomStyle">
+        <item name="android:windowEnterAnimation">@anim/lux_dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/lux_dialog_bottom_out</item>
+    </style>
+    <style name="Lux_DialogCenterScale">
+        <item name="android:windowEnterAnimation">@anim/lux_dialog_scale_center_in</item>
+        <item name="android:windowExitAnimation">@anim/lux_dialog_scale_center_out</item>
+    </style>
+    <style name="Lux_DialogLeftStyle">
+        <item name="android:windowEnterAnimation">@anim/lux_dialog_left_in</item>
+        <item name="android:windowExitAnimation">@anim/lux_dialog_left_out</item>
+    </style>
+    <style name="Lux_DialogRightStyle">
+        <item name="android:windowEnterAnimation">@anim/lux_dialog_right_in</item>
+        <item name="android:windowExitAnimation">@anim/lux_dialog_right_out</item>
+    </style>
+    <style name="Lux_DialogTopStyle">
+        <item name="android:windowEnterAnimation">@anim/lux_dialog_top_in</item>
+        <item name="android:windowExitAnimation">@anim/lux_dialog_top_out</item>
+    </style>
+    <style name="Lux_MaterialAlertDialog" parent="@style/Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorSurface">@color/lux_c12</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Lux_MaterialAlertDialog_Negative_Button
+        </item>
+        <item name="buttonBarPositiveButtonStyle">@style/Lux_MaterialAlertDialog_Positive_Button
+        </item>
+
+    </style>
+    <style name="Lux_MaterialAlertDialog_Negative_Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/lux_c5</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Lux_MaterialAlertDialog_Positive_Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/lux_c20</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Lux_Theme_Base_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="lux_picker_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+    <style mce_bogus="1" name="lux_picker_view_scale_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/lux_dialog_scale_center_in</item>
+        <item name="android:windowExitAnimation">@anim/lux_dialog_scale_center_out</item>
+    </style>
+    <style mce_bogus="1" name="lux_picker_view_slide_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/lux_dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/lux_dialog_bottom_out</item>
+    </style>
+    <declare-styleable name="FrameContentContainer">
+        <attr name="edit_view"/>
+        <attr name="auto_reset_enable"/>
+        <attr name="auto_reset_area"/>
+    </declare-styleable>
+    <declare-styleable name="LinearContentContainer">
+        <attr name="edit_view"/>
+        <attr name="auto_reset_enable"/>
+        <attr name="auto_reset_area"/>
+    </declare-styleable>
+    <declare-styleable name="LuxBanner">
+        <attr format="enum" name="lux_indicatorType">
+            <enum name="white" value="0"/>
+            <enum name="gray" value="1"/>
+        </attr>
+        <attr name="lux_indicatorShape"/>
+        <attr name="lux_selectedSize"/>
+        <attr name="lux_normalSize"/>
+        <attr name="lux_indicatorSpace"/>
+        <attr format="enum" name="lux_indicatorGravity">//indicator位置
+            <enum name="center" value="0"/>
+            <enum name="start" value="1"/>
+            <enum name="end" value="2"/>
+        </attr>
+        <attr format="dimension" name="lux_indicatorBottomMargin"/>//indicator距离底部间距
+        <attr format="dimension" name="lux_indicatorStartMargin"/>//indicator距离左边间距
+        <attr format="dimension" name="lux_indicatorEndMargin"/>//indicator距离右边间距
+
+        <attr format="integer" name="lux_autoScrollDuration"/>//轮播时间
+        <attr format="boolean" name="lux_isAutoPlay"/>//是否自动播放
+        <attr format="boolean" name="lux_isCycleScroll"/>//是否循环播放
+        <attr format="dimension" name="lux_bannerRadius"/>//圆角
+        <attr format="boolean" name="lux_hideIndicator"/>//是否隐藏indicator
+        <attr format="boolean" name="lux_showIndicatorForSinglePage"/>//只有一条数据是否隐藏indicator
+        <attr format="reference" name="lux_defaultImage"/>//占位图
+        <attr format="boolean" name="lux_fade"/>//渐显
+        <attr format="enum" name="lux_scaleType">
+            <enum name="center_crop" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="center_inside" value="2"/>
+            <enum name="fit_center" value="3"/>
+            <enum name="fit_end" value="4"/>
+            <enum name="fit_start" value="5"/>
+            <enum name="fit_xy" value="6"/>
+            <enum name="matrix" value="7"/>
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="LuxBaseCell">
+        <attr format="boolean" name="cell_showSwitch"/>//是否展示开关
+        <attr format="boolean" name="cell_switchEnable"/>//是否可用
+        <attr format="boolean" name="cell_switchChecked"/>//开关状态
+
+        <attr format="boolean" name="cell_showArrow"/>//是否展示箭头
+        <attr format="color|reference" name="cell_arrowColor"/>//箭头颜色
+        <attr format="string" name="cell_arrowText"/>//箭头
+        <attr format="dimension" name="cell_arrowSize"/>//箭头大小
+        <attr format="boolean" name="cell_arrowBold"/>//箭头是否加粗
+
+        <attr format="string" name="cell_titleText"/>//标题
+        <attr format="color|reference" name="cell_titleColor"/>//标题颜色
+        <attr format="dimension" name="cell_titleSize"/>//标题大小
+        <attr format="boolean" name="cell_titleBold"/>//标题是否加粗
+
+        <attr format="string" name="cell_subTitleText"/>//副标题
+        <attr format="color|reference" name="cell_subTitleColor"/>//副标题颜色
+        <attr format="dimension" name="cell_subTitleSize"/>//副标题大小
+        <attr format="boolean" name="cell_subTitleBold"/>//副标题是否加粗
+
+        <attr format="boolean" name="cell_topLine"/>//上分割线
+        <attr format="dimension" name="cell_topLineMarginLeft"/>//上分割线距左
+        <attr format="dimension" name="cell_topLineMarginRight"/>//上分割线距右
+        <attr format="boolean" name="cell_bottomLine"/>//下分割线
+        <attr format="dimension" name="cell_bottomLineMarginLeft"/>//下分割线距左
+        <attr format="dimension" name="cell_bottomLineMarginRight"/>//下分割线距右
+
+        <attr format="dimension" name="cell_leftPadding"/>//内容左间距
+        <attr format="dimension" name="cell_rightPadding"/>//内容右间距
+    </declare-styleable>
+    <declare-styleable name="LuxButton">
+        <attr format="enum" name="lux_styleType">
+            <enum name="main" value="0"/>//主按钮（默认）
+            <enum name="sub" value="1"/>//次按钮
+            <enum name="common" value="2"/>//通栏按钮
+        </attr>
+
+        <attr name="lux_gradientOrientation"/>// 渐变色方向
+
+        <attr name="lux_strokeWidth"/>边框大小
+        <attr name="lux_strokeColor"/>边框颜色 selector
+        <attr format="color" name="lux_strokeColorSelected"/>边框颜色 选中
+
+        <attr format="string|color" name="lux_backgroundColors_normal"/>//正常态
+        <attr format="string|color" name="lux_backgroundColors_pressed"/>//按压态
+        <attr format="string|color" name="lux_backgroundColors_disable"/>//置灰态
+        <attr format="string|color" name="lux_backgroundColors_selected"/>//选中态
+
+        <attr name="lux_textColor"/>文字颜色 selector
+        <attr name="lux_textColorSelected"/>文字颜色 选中
+        <attr name="lux_radius"/>圆角
+
+    </declare-styleable>
+    <declare-styleable name="LuxFilterTabView">
+        <attr format="color" name="lux_selectColor"/>
+        //菜单选中颜色
+        <attr name="lux_normalColor"/>//菜单未选中颜色
+        <attr name="lux_textSize"/>// 菜单文字大小
+        <attr format="boolean" name="lux_isShowMask"/>// 是否显示遮照
+        <attr format="color" name="lux_maskColor"/>// 遮照层颜色
+        <attr format="boolean" name="lux_isShowCorner"/>// 弹窗是否显示圆角
+        <attr format="dimension" name="lux_cornerRadius"/>// 弹窗圆角大小
+        <attr format="boolean" name="lux_closePopWhenSwitch"/>// 切换菜单时是否关闭已有的弹窗
+
+    </declare-styleable>
+    <declare-styleable name="LuxFilterTagGroup">
+        <attr format="enum" name="lux_tagGroupType">
+            <enum name="singleLine" value="0"/>
+            <enum name="multipleLine" value="1"/>
+        </attr>
+        <attr format="string|color" name="lux_tagSelectedColor"/>//tag背景色
+        <attr format="string|color" name="lux_tagNormalColor"/>//tag背景色
+        <attr format="color" name="lux_textColorNormal"/>//tag文字色
+        <attr name="lux_textColorSelected"/>//tag文字色
+        <attr name="lux_textSize"/>//tag文字大小
+        <attr name="lux_gradientOrientation"/>// 渐变色方向
+
+        <attr format="dimension" name="lux_horizontalSpace"/>//tag水平间距
+        <attr format="dimension" name="lux_verticalSpace"/>//tag垂直间距
+
+        <attr format="dimension" name="lux_tagHeight"/>//tag 高度
+        <attr format="dimension" name="lux_tagWidth"/>//tag 宽度
+        <attr format="integer" name="lux_spanCount"/>列数
+        <attr name="lux_justifyContent">//同FlexboxLayout_justifyContent
+            <enum name="flex_start" value="0"/>
+            <enum name="flex_end" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="space_between" value="3"/>
+            <enum name="space_around" value="4"/>
+            <enum name="space_evenly" value="5"/>
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="LuxIndicator">
+        <attr format="color" name="lux_selectedColor"/>
+        <attr name="lux_normalColor"/>
+        <attr name="lux_strokeWidth"/>
+        <attr format="color" name="lux_selectedStrokeColor"/>
+        <attr format="color" name="lux_normalStrokeColor"/>
+        <attr name="lux_selectedSize"/>
+        <attr name="lux_normalSize"/>
+        <attr name="lux_indicatorSpace"/>
+        <attr name="lux_indicatorShape"/>
+    </declare-styleable>
+    <declare-styleable name="LuxLabelView">
+        <attr name="lux_radius"/>
+        <attr name="lux_strokeWidth"/>//边框宽度
+        <attr name="lux_strokeColor"/>//边框色
+        <attr format="color" name="lux_backgroundColor"/>//背景色
+        <attr name="android:paddingStart"/>
+        <attr name="android:paddingEnd"/>
+        <attr name="android:textSize"/>
+        <attr name="android:background"/>
+    </declare-styleable>
+    <declare-styleable name="LuxNoticeCell">
+        <attr format="boolean" name="lux_singleLine"/>//是否单行滚动
+        <attr name="lux_textColor"/>
+        <attr format="string" name="lux_notice"/>//内容
+        <attr format="boolean" name="lux_showClose"/>//关闭按钮
+        <attr format="boolean" name="lux_showArrow"/>//右箭头
+        <attr format="string" name="lux_noticeIcon"/>//广播icon
+        <attr format="reference" name="lux_fontFamily"/>//iconFont font
+        <attr format="string" name="lux_fontPath"/>//iconFont asserts
+        <attr format="flags" name="lux_textGravity">//文案对齐方式
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LuxOnlinePoint">
+        <attr format="color|reference" name="onlineColor"/>//在线颜色
+        <attr format="color|reference" name="offlineColor"/>//不在线
+        <attr format="boolean" name="showBorder"/>//是否展示边框
+        <attr format="dimension" name="borderWidth"/>//边框
+        <attr format="enum" name="onlineStatus">//在线状态
+            <enum name="offline" value="0"/>
+            <enum name="online" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LuxPickerWheelView">
+        <attr name="LuxWheelView_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr format="dimension" name="LuxWheelView_textSize"/>
+        <attr format="color" name="LuxWheelView_textColorOut"/>
+        <attr format="color" name="LuxWheelView_textColorCenter"/>
+        <attr format="color" name="LuxWheelView_dividerColor"/>
+        <attr format="dimension" name="LuxWheelView_dividerWidth"/>
+        <attr format="float" name="LuxWheelView_lineSpacingMultiplier"/>
+    </declare-styleable>
+    <declare-styleable name="LuxRoundFrameLayout">
+        <attr name="lux_radius"/>
+        <attr format="dimension" name="lux_topLeftRadius"/>
+        <attr format="dimension" name="lux_topRightRadius"/>
+        <attr format="dimension" name="lux_bottomLeftRadius"/>
+        <attr format="dimension" name="lux_bottomRightRadius"/>
+    </declare-styleable>
+    <declare-styleable name="LuxSearchBar">
+        <attr name="lux_strokeWidth"/>//边框宽度
+        <attr name="lux_strokeColor"/>//边框色
+        <attr format="color" name="lux_solidColor"/>//填充色
+        <attr name="lux_radius"/>//圆角弧度
+        <attr name="lux_hintText"/>//提示语
+        <attr name="lux_hintTextColor"/>//提示语颜色
+        <attr format="color" name="lux_editTextColor"/>//文本颜色
+        <attr name="lux_textSize"/>//文本字号
+        <attr format="string" name="lux_searchText"/>//搜索Iconfont文本
+        <attr format="color" name="lux_searchTextColor"/>//搜索Iconfont文本颜色
+        <attr format="dimension" name="lux_searchPaddingStart"/>//搜索Icon左侧间距
+        <attr format="dimension" name="lux_searchPaddingEnd"/>//搜索Icon右侧间距
+        <attr format="string" name="lux_clearText"/>//清除Iconfont文本
+        <attr format="color" name="lux_clearTextColor"/>//清除Iconfont文本颜色
+        <attr format="dimension" name="lux_clearPaddingStart"/>//清除Icon左侧间距
+        <attr format="dimension" name="lux_clearPaddingEnd"/>//清除Icon右侧间距
+        <attr format="reference" name="lux_cursorDrawable"/>//光标Drawable
+        <attr name="lux_active"/>//是否是EditText激活状态
+        <attr format="integer" name="lux_debounceInterval"/>//搜索防抖动间隔
+    </declare-styleable>
+    <declare-styleable name="LuxSubsamplingScaleImageView">
+        <attr format="reference" name="lux_src"/>
+        <attr format="string" name="lux_assetName"/>
+        <attr format="boolean" name="lux_panEnabled"/>
+        <attr format="boolean" name="lux_zoomEnabled"/>
+        <attr format="boolean" name="lux_quickScaleEnabled"/>
+        <attr format="color" name="lux_tileBackgroundColor"/>
+    </declare-styleable>
+    <declare-styleable name="LuxSwitch">
+        <attr format="color|reference" name="switch_checkedThumbColor"/>//选中颜色
+        <attr format="color|reference" name="switch_unCheckedThumbColor"/>//未选中颜色
+        <attr format="color|reference" name="switch_unCheckedTrackColor"/>//未选中颜色
+    </declare-styleable>
+    <declare-styleable name="LuxTabLayout">
+        <attr format="enum" name="lux_tabMode">
+            <enum name="adjustMode" value="0"/>//等分模式
+            <enum name="scrollableMode" value="1"/>//左对齐模式
+        </attr>
+
+        <attr format="dimension" name="lux_pageSpace"/>等分模式间距
+        <attr format="dimension" name="lux_tabSpace"/>左对齐模式间距
+        <attr format="color" name="lux_titleColorNormal"/>title 常态颜色
+        <attr format="color" name="lux_titleColorSelected"/>title 选中颜色
+        <attr format="dimension" name="lux_titleSize"/>title 大小
+        <attr format="color" name="lux_indicatorColor"/>指示器颜色
+        <attr format="color" name="lux_indicatorColorEnd"/>指示器颜色
+        <attr format="dimension" name="lux_indicatorWidth"/>指示器宽
+        <attr format="dimension" name="lux_indicatorHeight"/>指示器高
+        <attr format="dimension" name="lux_titleSizeSelected"/>title 选中大小
+        <attr format="boolean" name="lux_titleSelectedIsBold"/>title 选中title是否粗体
+        <attr format="dimension" name="lux_indicatorBottomSpace"/>指示器距离底部高度
+
+    </declare-styleable>
+    <declare-styleable name="LuxTextFiled">
+        <attr name="lux_radius"/>
+
+        <attr name="lux_textSize"/>
+        <attr name="lux_text"/>//文本
+        <attr name="lux_textColor"/>//文本颜色
+        <attr name="lux_hintText"/>//提示语
+        <attr name="lux_hintTextColor"/>//提示语颜色
+        <attr format="integer" name="lux_maxLength"/>//字数
+
+        <attr format="color" name="lux_numTextColor"/>//数字
+        <attr format="dimension" name="lux_numTextSize"/>//数字
+
+        <attr format="reference" name="lux_rightIcon"/>//表情icon
+        <attr format="reference" name="lux_rightIconSelected"/>//表情icon选中
+
+        <attr format="dimension" name="lux_maxHeight"/>//最大高度
+        <attr format="boolean" name="lux_showNumText"/>
+        <attr format="enum" name="lux_textFiledType">
+            <enum name="Keyboard" value="0"/>
+            <enum name="Normal" value="1"/>
+        </attr>
+        <attr name="lux_active"/>//是否是EditText激活状态
+    </declare-styleable>
+    <declare-styleable name="PanelSwitchLayout">
+        <attr format="integer" name="animationSpeed">
+            <enum name="slowest" value="300"/>
+            <enum name="slow" value="250"/>
+            <enum name="standard" value="200"/>
+            <enum name="fast" value="150"/>
+            <enum name="fastest" value="100"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PanelView">
+        <attr format="reference" name="panel_trigger"/>
+        <attr format="boolean" name="panel_toggle"/>
+        <attr format="reference" name="panel_layout"/>
+    </declare-styleable>
+    <declare-styleable name="RelativeContentContainer">
+        <attr name="edit_view"/>
+        <attr name="auto_reset_enable"/>
+        <attr name="auto_reset_area"/>
+    </declare-styleable>
+</resources>
