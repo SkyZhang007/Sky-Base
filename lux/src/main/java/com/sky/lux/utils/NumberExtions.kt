@@ -3,7 +3,7 @@ package com.sky.lux.utils
 import java.text.DecimalFormat
 
 /**
- * Created by lfs on 2020/4/2
+ * Created on 2020/4/2
  * For kotlin, numbers are easier to be used by the tool class.
  */
 

@@ -10,3 +10,4 @@ rootProject.name = "Sky-Base"
 include ':app'
 include ':lux'
 include ':network'
+include ':base'

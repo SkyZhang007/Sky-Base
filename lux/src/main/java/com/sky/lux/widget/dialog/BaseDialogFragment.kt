@@ -12,7 +12,7 @@ import com.sky.lux.utils.startMargin
 import com.sky.lux.utils.topMargin
 
 /**
- * Created by lfs on 2020/6/20
+ * Created on 2020/6/20
  *
  * 对页面的各种事件和 UI 操作转换为对 Window 和 Dialog 的操作，更加灵活。
  * 常用方法抽象出来，方便使用。
@@ -20,7 +20,7 @@ import com.sky.lux.utils.topMargin
  * 根布局用 [getView] 或 [initViews] 的入参 view 获取，Context 用 [getContext] 获取。
  * 如果想要构建自定义 Dialog，可用 [createDialog] 构建。
  */
-abstract class LuxBaseDialogFragment : AppCompatDialogFragment() {
+abstract class BaseDialogFragment : AppCompatDialogFragment() {
 
     companion object {
 
