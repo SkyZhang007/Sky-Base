@@ -24,7 +24,6 @@ import java.util.regex.Pattern;
  * created on 2020-03-31
  * description：
  */
-@SuppressLint("PrivateApi")
 public class DeviceUtil {
     private final static String TAG = "LuxDeviceUtil";
     private final static String KEY_MIUI_VERSION_NAME = "ro.miui.ui.version.name";
