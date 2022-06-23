@@ -7,17 +7,17 @@ import java.text.DecimalFormat
  * For kotlin, numbers are easier to be used by the tool class.
  */
 
-//val Number.dp2px
-//    get() = LuxScreenUtil.dp2px(this.toFloat())
-//
-//val Number.dp2px_f
-//    get() = LuxScreenUtil.dp2px_f(this.toFloat())
-//
-//val Number.px2dp
-//    get() = LuxScreenUtil.px2dp(this.toFloat())
-//
-//val Number.px2dp_f
-//    get() = LuxScreenUtil.px2dp_f(this.toFloat())
+val Number.dp2px
+    get() = ScreenUtil.dp2px(this.toFloat())
+
+val Number.dp2px_f
+    get() = ScreenUtil.dp2px_f(this.toFloat())
+
+val Number.px2dp
+    get() = ScreenUtil.px2dp(this.toFloat())
+
+val Number.px2dp_f
+    get() = ScreenUtil.px2dp_f(this.toFloat())
 
 fun Number.format(pattern: String = "00"): String {
     return DecimalFormat(pattern).format(this)

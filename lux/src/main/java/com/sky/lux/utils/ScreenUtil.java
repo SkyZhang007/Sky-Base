@@ -44,6 +44,22 @@ public class ScreenUtil {
         return size.x;
     }
 
+    public static int dp2px(float dp) {
+        return dp2px(Lux.getAppContext(), dp);
+    }
+
+    public static int dp2px(Context context, float dp) {
+        if (context == null) {
+            context = Lux.getAppContext();
+        }
+        if (context == null) {
+            return (int) (dp * 3);
+        }
+        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.getResources().getDisplayMetrics());
+        return Math.round(px);
+    }
+
+
     /**
      * @param context used to fetch display metrics
      * @param dp      dp value
@@ -55,6 +71,25 @@ public class ScreenUtil {
         }
         float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.getResources().getDisplayMetrics());
         return Math.round(px);
+    }
+
+    public static float dp2px_f(float dp) {
+        Context context = Lux.getAppContext();
+        if (context == null) {
+            return dp * 3;
+        }
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.getResources().getDisplayMetrics());
+
+    }
+
+    public static int px2dp(float px) {
+        return Math.round(px2dp_f(px));
+    }
+
+    public static float px2dp_f(float px) {
+        Context context = Lux.getAppContext();
+        final float density = context.getResources().getDisplayMetrics().density;
+        return px / density;
     }
 
     public static float dp2px_f(Context context, float dp) {
