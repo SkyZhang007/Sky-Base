@@ -1,0 +1,88 @@
+ext {
+
+    android = [
+            compileSdkVersion: 31,
+            buildToolsVersion: "30.0.3",
+            applicationId    : "com.XXXX.XXXX",
+            minSdkVersion    : 21,
+            targetSdkVersion : 31, // 27以上的版本http请求 权限不允许
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    java = [
+            sourceCompatibility: JavaVersion.VERSION_1_8,
+            targetCompatibility: JavaVersion.VERSION_1_8,
+            jvmTarget          : '1.8'
+    ]
+
+    dependencies = [
+            //basic
+            "ktx"                   : 'androidx.core:core-ktx:1.8.0',
+            "appcompat"             : 'androidx.appcompat:appcompat:1.4.2',
+            "material"              : 'com.google.android.material:material:2.1.0',
+            "constraintlayout"      : 'androidx.constraintlayout:constraintlayout:2.1.6',
+            "navigation-fragment"   : 'androidx.navigation:navigation-fragment:2.4.1',
+            "navigation-ui"         : 'androidx.navigation:navigation-ui:2.4.1',
+
+            //Rxjava
+            "rxjava"                : "io.reactivex.rxjava2:rxjava:2.1.6",
+            "rxandroid"             : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "rxrelay"               : "com.jakewharton.rxrelay2:rxrelay:2.0.0",
+
+            /*Rx生命周期管理*/
+            "rxlifecycle"           : "com.trello.rxlifecycle2:rxlifecycle:2.2.0",
+            "rxlifecycle-components": "com.trello.rxlifecycle2:rxlifecycle-components:2.2.0",
+
+            //Retrofit
+            "retrofit"              : "com.squareup.retrofit2:retrofit:2.4.0",
+            "retrofit-gson"         : "com.squareup.retrofit2:converter-gson:2.4.0",
+            "retrofit-adapter"      : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
+            "okhttp-log-interceptor": "com.squareup.okhttp3:logging-interceptor:3.10.0",
+            "okhttp3"               : "com.squareup.okhttp3:okhttp:3.10.0",
+            "gson"                  : "com.google.code.gson:gson:2.8.2",
+            "logger"                : "com.orhanobut:logger:2.1.1",
+
+            /*eventBus*/
+            "eventBus"              : "org.greenrobot:eventbus:3.1.1",
+
+            //Glide  4.11.0 才适配AndroidX
+            "Glide"                 : "com.github.bumptech.glide:glide:4.11.0",
+            "Glide-anno"            : "com.github.bumptech.glide:compiler:4.11.0",
+
+            //腾讯 Buggly
+            "TecentBugly"           : "com.tencent.bugly:crashreport:latest.release",
+            "TecentBugly-native"    : "com.tencent.bugly:nativecrashreport:latest.release",
+
+            // 屏幕适配集成
+            "Screen-Adapter"        : "me.jessyan:autosize:1.2.1",
+
+            //组件化 Arouter
+            "Arouter"               : "com.alibaba:arouter-api:1.2.2",
+            "Arouter-anno"          : "com.alibaba:arouter-compiler:1.1.3"
+    ]
+
+    avcProtocol = [
+            "innerNet": "ws://",//ws
+            "extraNet": "wss://"
+    ]
+
+    url = [
+
+            // "debug"  : "https://XXXXX.XXXXX.cn",//
+
+            // "debug"  : "http://192.168.71.126",//
+
+    ]
+
+    port = [
+            // "debug_port"   : 53073  ,//avc
+
+    ]
+
+    filefolder = [
+            "release_root_folder": "",
+            "debug_root_folder"  : "_debug"
+    ]
+
+}
